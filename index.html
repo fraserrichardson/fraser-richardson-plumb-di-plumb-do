@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Fraser Richardson · Brand Lead, applying to Plum</title>
+<meta name="description" content="A short profile from Fraser Richardson for the Brand Lead role at Plum. Eight years in commercial marketing, verbal identity and multilingual positioning." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --paper: #F2EDE4;
+    --paper-2: #EAE3D4;
+    --ink: #1A1816;
+    --ink-2: #3A3530;
+    --muted: #7A7267;
+    --rule: #D8CFBF;
+    --plum: #5A2A4E;
+    --plum-2: #7A3E6C;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.35;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='5'/><feColorMatrix values='0 0 0 0 0.1  0 0 0 0 0.09  0 0 0 0 0.08  0 0 0 0.06 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    mix-blend-mode: multiply;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 32px; position: relative; z-index: 2; }
+
+  .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--rule);
+    padding: 18px 0;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .meta .dot {
+    display: inline-block;
+    width: 6px; height: 6px;
+    background: var(--plum);
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  .hero { padding: 96px 0 72px; }
+  .kicker {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--plum);
+    margin-bottom: 28px;
+    font-weight: 500;
+  }
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+    font-size: clamp(56px, 10vw, 132px);
+    line-height: 0.92;
+    letter-spacing: -0.03em;
+    margin: 0 0 36px;
+    color: var(--ink);
+  }
+  h1 em {
+    font-style: italic;
+    font-variation-settings: "opsz" 144, "SOFT" 80, "WONK" 1;
+    color: var(--plum);
+  }
+  .hero-sub {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 300;
+    font-size: clamp(22px, 2.4vw, 30px);
+    line-height: 1.35;
+    max-width: 760px;
+    color: var(--ink-2);
+    letter-spacing: -0.01em;
+  }
+
+  section { padding: 72px 0; border-top: 1px solid var(--rule); }
+  .section-label {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 40px;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+  }
+  .section-label span.num {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--plum);
+  }
+  h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(32px, 4.2vw, 52px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 0 0 40px;
+    max-width: 820px;
+  }
+  p { max-width: 680px; color: var(--ink-2); }
+  p + p { margin-top: 18px; }
+
+  .numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .num-cell {
+    padding: 40px 24px;
+    border-right: 1px solid var(--rule);
+  }
+  .num-cell:last-child { border-right: none; }
+  .num-value {
+    font-family: 'Fraunces', Georgia, serif;
+    font-variation-settings: "opsz" 144;
+    font-weight: 400;
+    font-size: clamp(44px, 6vw, 76px);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+  .num-label {
+    margin-top: 14px;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.4;
+    max-width: 22ch;
+  }
+
+  .roles { display: grid; grid-template-columns: 1fr; gap: 0; }
+  .role {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 48px;
+    padding: 40px 0;
+    border-top: 1px solid var(--rule);
+    transition: background 0.4s ease;
+  }
+  .role:hover { background: rgba(90, 42, 78, 0.03); }
+  .role:last-child { border-bottom: 1px solid var(--rule); }
+  .role-when {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--plum);
+    line-height: 1.3;
+  }
+  .role-where {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+  }
+  .role-role {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 18px;
+  }
+  .role-body { max-width: 640px; color: var(--ink-2); }
+  .role-body + .role-body { margin-top: 12px; }
+
+  .two {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 64px;
+    align-items: start;
+  }
+  .two aside {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--plum);
+    border-left: 2px solid var(--plum);
+    padding-left: 20px;
+  }
+
+  .plan { list-style: none; padding: 0; margin: 0; max-width: 780px; }
+  .plan li {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 24px;
+    padding: 24px 0;
+    border-top: 1px solid var(--rule);
+    color: var(--ink-2);
+  }
+  .plan li:last-child { border-bottom: 1px solid var(--rule); }
+  .plan .step {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    color: var(--plum);
+    font-size: 18px;
+  }
+
+  .also {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+  .also-item {
+    font-size: 14px;
+    color: var(--ink-2);
+    line-height: 1.5;
+  }
+  .also-item strong {
+    display: block;
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+
+  footer { padding: 96px 0 48px; border-top: 1px solid var(--rule); }
+  .cta {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    max-width: 800px;
+    margin-bottom: 40px;
+  }
+  .cta em { font-style: italic; color: var(--plum); }
+  .contact-row {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    font-size: 15px;
+  }
+  .contact-row a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--plum);
+    padding-bottom: 2px;
+    transition: color 0.2s;
+  }
+  .contact-row a:hover { color: var(--plum); }
+  .colophon {
+    margin-top: 72px;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+  }
+  .reveal.in { opacity: 1; transform: none; }
+
+  @media (max-width: 760px) {
+    .wrap { padding: 0 20px; }
+    .hero { padding: 56px 0 48px; }
+    section { padding: 56px 0; }
+    .numbers { grid-template-columns: 1fr; }
+    .num-cell { border-right: none; border-bottom: 1px solid var(--rule); }
+    .num-cell:last-child { border-bottom: none; }
+    .role { grid-template-columns: 1fr; gap: 12px; }
+    .two { grid-template-columns: 1fr; gap: 32px; }
+    .also { grid-template-columns: 1fr 1fr; }
+    .plan li { grid-template-columns: 40px 1fr; gap: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="meta">
+    <div><span class="dot"></span>Fraser Richardson · London</div>
+    <div id="clock">…</div>
+  </div>
+
+  <header class="hero">
+    <div class="kicker reveal">Applying for Brand Lead at Plum</div>
+    <h1 class="reveal">Brand, built<br/>where the <em>money</em><br/>and the <em>words</em> meet.</h1>
+    <p class="hero-sub reveal">Eight years of commercial marketing across financial services, international property and agency work. I build verbal identity, editorial programmes and multilingual narrative for audiences who read the numbers carefully.</p>
+  </header>
+
+  <section>
+    <div class="section-label reveal"><span class="num">01</span> Shape</div>
+    <h2 class="reveal">What I've actually done, stated plainly.</h2>
+    <p class="reveal">The part of my track record that sits closest to Brand Lead is three years at Savills in Monaco building the brand and editorial engine into international HNW and family-office buyers, and the agency stint at Croud (VERB Brands luxury practice) running paid and creative for houses including Creed, Kerzner and Maybourne. The verbal identity work, the multilingual narrative, the editorial programme and the discipline of making a financial proposition feel differentiated to a specific buyer are the core of what I have done.</p>
+  </section>
+
+  <section>
+    <div class="section-label reveal"><span class="num">02</span> The work</div>
+    <div class="roles">
+
+      <article class="role reveal">
+        <div>
+          <div class="role-when">Oct 2024 to present</div>
+        </div>
+        <div>
+          <div class="role-where">FI Group, London</div>
+          <div class="role-role">UK Marketing, single-operator function</div>
+          <p class="role-body">Own the UK marketing function end-to-end at an international innovation funding consultancy. Narrative, tone of voice, visual direction of the UK site and the thought-leadership engine aimed at CFOs, finance directors and R&amp;D leaders, all mine.</p>
+          <p class="role-body">The exercise: build a differentiated financial-services narrative inside a crowded category from a standing start. Translate technical innovation-funding material into a finance-buyer story that earns attention.</p>
+        </div>
+      </article>
+
+      <article class="role reveal">
+        <div>
+          <div class="role-when">Jan 2024 to Jun 2024</div>
+        </div>
+        <div>
+          <div class="role-where">Croud, VERB Brands practice</div>
+          <div class="role-role">Paid Media Account Manager, luxury B2C</div>
+          <p class="role-body">Managed cross-channel paid activity averaging £90,000 a month for clients including Creed Fragrances, Kerzner Group and Maybourne Group. Launched Queen of Silk for Creed across the UK and EU and introduced Aventus into new European markets, delivering CPA efficiencies of 50% or more in several markets.</p>
+          <p class="role-body">Worked directly with creative teams to keep brand look and tone consistent across formats, and built a European HNW tracking calendar for Maybourne's seasonal paid social.</p>
+        </div>
+      </article>
+
+      <article class="role reveal">
+        <div>
+          <div class="role-when">Jun 2020 to Jun 2023</div>
+        </div>
+        <div>
+          <div class="role-where">Savills, Monaco</div>
+          <div class="role-role">Digital Marketing Director &amp; Property Broker</div>
+          <p class="role-body">Built the Monaco office's brand and editorial engine from scratch: a multilingual editorial programme (English, French, Italian), bespoke client presentation material for high-value meetings and a visual system that had to feel credible to finance-literate international HNW and family-office buyers.</p>
+          <p class="role-body">Owned tone of voice and brand guidelines across listing syndication, email, landing pages and out-of-home print. Paid media generated leads that supported over €65m of property transactions across the book; 136% uplift in website leads and 600% improvement in search visibility for savills.mc over three years.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label reveal"><span class="num">03</span> Numbers</div>
+    <h2 class="reveal">The last twelve months, for scale.</h2>
+    <div class="numbers reveal">
+      <div class="num-cell">
+        <div class="num-value" data-count="401060" data-prefix="€" data-suffix="">€0</div>
+        <div class="num-label">Attributed revenue in 2025 at FI Group. 267.5% of target, 353% uplift on 2024.</div>
+      </div>
+      <div class="num-cell">
+        <div class="num-value" data-count="248" data-prefix="" data-suffix="%">0%</div>
+        <div class="num-label">Year on year UK website traffic growth. Signal-led content, technical hygiene, CRO.</div>
+      </div>
+      <div class="num-cell">
+        <div class="num-value" data-count="65" data-prefix="€" data-suffix="m">€0m</div>
+        <div class="num-label">Of property transactions supported at Savills Monaco, HNW and family-office.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label reveal"><span class="num">04</span> Why Plum</div>
+    <div class="two">
+      <aside class="reveal">"Grow money for life" is a clearer brand proposition than most fintechs manage. I'd rather work on that than on a positioning that hasn't been figured out yet.</aside>
+      <div>
+        <p class="reveal">Savings and investing into a consumer finance audience is a category where verbal identity genuinely does drive trust. Plum operates at European scale across ten markets, the sort of multilingual positioning problem I find interesting after four years of multilingual work out of Monaco.</p>
+        <p class="reveal">Two gaps I should name. I have not led a brand refresh at the scale Plum is describing as an internal consultant to a Product Design team and a Creative Studio; the closest analogues are building the brand and content system at Savills and at FI Group from a much smaller starting point. And I have not held end-to-end relationships with external brand strategy and creative agencies at Plum's size. I'd expect to over-invest in the first month on reading the current brand system, the customer research you already hold and the agency relationships before proposing anything.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label reveal"><span class="num">05</span> On AI</div>
+    <h2 class="reveal">Part of the workflow, not a separate exercise.</h2>
+    <p class="reveal">Claude, ChatGPT, Midjourney and lightweight automations sit inside drafting, research, landing-page iteration, brand-voice calibration and campaign analysis. I use them to hold a consistent tone of voice across a lot of output, which is close to the operational problem a Brand Lead overseeing creative at scale is trying to solve. At FI Group this includes a lead-qualifying chatbot and automated content workflows inside the UK AI roadmap.</p>
+    <p class="reveal" style="font-family: 'Fraunces', serif; font-style: italic; color: var(--muted); font-size: 15px; margin-top: 28px;">(This page was built with one of those tools, in about an hour.)</p>
+  </section>
+
+  <section>
+    <div class="section-label reveal"><span class="num">06</span> First 90 days</div>
+    <h2 class="reveal">What I'd expect to do.</h2>
+    <ol class="plan">
+      <li class="reveal"><div class="step">i.</div><div>Audit the current brand system and how consistently it shows up across app UI, social, paid and out-of-home.</div></li>
+      <li class="reveal"><div class="step">ii.</div><div>A read with Product Design and the Creative Studio on where the system is doing its job and where it is leaking.</div></li>
+      <li class="reveal"><div class="step">iii.</div><div>A first view on the refresh that names the three or four places I think matter most.</div></li>
+      <li class="reveal"><div class="step">iv.</div><div>A tighter brief and review rhythm with the external agencies so output quality rises without bottlenecking on me.</div></li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="section-label reveal"><span class="num">07</span> Also</div>
+    <div class="also">
+      <div class="also-item reveal"><strong>Education</strong>First Class BA (Hons) Business &amp; Marketing Management, Oxford Brookes. Acting for Screen, Natalie Ford Studios, Los Angeles.</div>
+      <div class="also-item reveal"><strong>Languages</strong>English (native). French (intermediate, from four years living and working in France and Monaco).</div>
+      <div class="also-item reveal"><strong>Writing</strong>Signed with an agent for writing and acting. Two screenplays currently with Universal Studios.</div>
+      <div class="also-item reveal"><strong>Stack</strong>Microsoft Dynamics, GA4, Webflow, Ahrefs, Meta / Google / LinkedIn Ads. Claude and ChatGPT daily for drafting, review and brand-voice work.</div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="cta reveal">Happy to walk through the <em>Savills</em> and <em>FI Group</em> work in more detail, and to hear where you think the Plum brand system is strongest today.</div>
+    <div class="contact-row reveal">
+      <a href="mailto:fraser.coms@gmail.com">fraser.coms@gmail.com</a>
+      <a href="tel:+447876029801">+44 7876 029 801</a>
+      <a href="https://linkedin.com/in/fraserdrichardson" target="_blank" rel="noopener">linkedin.com/in/fraserdrichardson</a>
+    </div>
+    <div class="colophon">
+      <div>Fraser Richardson · Profile for Plum · Brand Lead</div>
+      <div>Set in Fraunces &amp; Inter</div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  function tick() {
+    const d = new Date();
+    const t = d.toLocaleTimeString('en-GB', { timeZone: 'Europe/London', hour: '2-digit', minute: '2-digit' });
+    document.getElementById('clock').textContent = 'London · ' + t;
+  }
+  tick(); setInterval(tick, 30000);
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  function animateCount(el) {
+    const target = parseFloat(el.dataset.count);
+    const prefix = el.dataset.prefix || '';
+    const suffix = el.dataset.suffix || '';
+    const duration = 1400;
+    const start = performance.now();
+    function frame(now) {
+      const t = Math.min(1, (now - start) / duration);
+      const eased = 1 - Math.pow(1 - t, 3);
+      const v = target * eased;
+      let out;
+      if (target >= 10000) out = Math.round(v).toLocaleString('en-GB');
+      else if (target % 1 !== 0) out = v.toFixed(1);
+      else out = Math.round(v).toString();
+      el.textContent = prefix + out + suffix;
+      if (t < 1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+  const numIO = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { animateCount(e.target); numIO.unobserve(e.target); } });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.num-value[data-count]').forEach(el => numIO.observe(el));
+</script>
+
+</body>
+</html>
