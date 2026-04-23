@@ -2,524 +2,725 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Fraser Richardson · Brand Lead, applying to Plum</title>
-<meta name="description" content="A short profile from Fraser Richardson for the Brand Lead role at Plum. Eight years building brand and editorial work for audiences who read the numbers carefully." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fraser Richardson, Brand Lead, Plum</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --paper: #F2EDE4;
-    --paper-2: #EAE3D4;
-    --ink: #1A1816;
-    --ink-2: #3A3530;
-    --muted: #7A7267;
-    --rule: #D8CFBF;
-    --plum: #5A2A4E;
-    --plum-2: #7A3E6C;
+    --plum-deep: #2a0a4a;
+    --plum-primary: #5a2ca0;
+    --plum-soft: #b89cf0;
+    --plum-blush: #f3e9ff;
+    --plum-cream: #faf6ff;
+    --ink: #1a0a2e;
+    --muted: #6b5b8a;
+    --gold: #d4a574;
+    --leaf: #7ba05b;
+    --stem: #5a8044;
   }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
   body {
-    background: var(--paper);
+    background: var(--plum-cream);
     color: var(--ink);
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
     font-size: 17px;
-    line-height: 1.55;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+    line-height: 1.6;
+    overflow-x: hidden;
   }
-  body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.35;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='5'/><feColorMatrix values='0 0 0 0 0.1  0 0 0 0 0.09  0 0 0 0 0.08  0 0 0 0.06 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
-    mix-blend-mode: multiply;
-  }
-  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 32px; position: relative; z-index: 2; }
+  h1, h2, h3 { font-family: 'Fraunces', Georgia, serif; font-weight: 500; letter-spacing: -0.02em; }
 
-  .meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid var(--rule);
-    padding: 18px 0;
-    font-size: 12px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--muted);
-  }
-  .meta .dot {
-    display: inline-block;
-    width: 6px; height: 6px;
-    background: var(--plum);
-    border-radius: 50%;
-    margin-right: 8px;
-    vertical-align: middle;
-  }
-
-  /* Hero with photo */
+  /* ---------- HERO ---------- */
   .hero {
-    padding: 96px 0 72px;
-    display: grid;
-    grid-template-columns: 1.35fr 1fr;
-    gap: 64px;
-    align-items: center;
-  }
-  .hero-text { min-width: 0; }
-  .hero-image {
+    min-height: 100vh;
     position: relative;
-    aspect-ratio: 4 / 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+    background:
+      radial-gradient(1200px 600px at 50% 20%, #efe1ff 0%, transparent 60%),
+      radial-gradient(800px 500px at 80% 90%, #ffe8f4 0%, transparent 50%),
+      linear-gradient(180deg, #faf6ff 0%, #f3e9ff 100%);
     overflow: hidden;
-    background: var(--paper-2);
-    border: 1px solid var(--rule);
   }
-  .hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    filter: saturate(0.95) contrast(1.02);
+  .hero-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+    text-align: center;
   }
-  .hero-image::after {
-    content: "Fraser Richardson, London, 2026";
-    position: absolute;
-    bottom: 16px;
-    left: 16px;
-    right: 16px;
-    font-family: 'Fraunces', Georgia, serif;
-    font-style: italic;
+  .eyebrow {
+    display: inline-block;
     font-size: 12px;
-    color: var(--paper);
-    mix-blend-mode: difference;
-    letter-spacing: 0.02em;
-  }
-  .kicker {
-    font-size: 12px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--plum);
-    margin-bottom: 28px;
-    font-weight: 500;
-  }
-  h1 {
-    font-family: 'Fraunces', Georgia, serif;
-    font-weight: 400;
-    font-variation-settings: "opsz" 144, "SOFT" 30;
-    font-size: clamp(48px, 7.2vw, 104px);
-    line-height: 0.92;
-    letter-spacing: -0.03em;
-    margin: 0 0 36px;
-    color: var(--ink);
-  }
-  h1 em {
-    font-style: italic;
-    font-variation-settings: "opsz" 144, "SOFT" 80, "WONK" 1;
-    color: var(--plum);
-  }
-  .hero-sub {
-    font-family: 'Fraunces', Georgia, serif;
-    font-weight: 300;
-    font-size: clamp(19px, 1.8vw, 24px);
-    line-height: 1.4;
-    color: var(--ink-2);
-    letter-spacing: -0.01em;
-    max-width: 540px;
-  }
-
-  section { padding: 72px 0; border-top: 1px solid var(--rule); }
-  .section-label {
-    font-size: 11px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 40px;
-    display: flex;
-    gap: 14px;
-    align-items: center;
+    color: var(--plum-primary);
+    padding: 6px 14px;
+    border: 1px solid var(--plum-soft);
+    border-radius: 100px;
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(8px);
+    margin-bottom: 28px;
+    opacity: 0;
+    animation: rise 1s ease 0.2s forwards;
   }
-  .section-label span.num {
-    font-family: 'Fraunces', Georgia, serif;
+  .hero h1 {
+    font-size: clamp(44px, 7vw, 88px);
+    line-height: 1.02;
+    color: var(--plum-deep);
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: rise 1s ease 0.5s forwards;
+  }
+  .hero h1 em {
     font-style: italic;
-    font-size: 14px;
-    color: var(--plum);
-  }
-  h2 {
-    font-family: 'Fraunces', Georgia, serif;
+    color: var(--plum-primary);
     font-weight: 400;
-    font-size: clamp(32px, 4.2vw, 52px);
-    line-height: 1.05;
-    letter-spacing: -0.02em;
-    margin: 0 0 40px;
-    max-width: 820px;
   }
-  p { max-width: 680px; color: var(--ink-2); }
-  p + p { margin-top: 18px; }
-
-  .numbers {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0;
-    border-top: 1px solid var(--rule);
-    border-bottom: 1px solid var(--rule);
-  }
-  .num-cell {
-    padding: 40px 24px;
-    border-right: 1px solid var(--rule);
-  }
-  .num-cell:last-child { border-right: none; }
-  .num-value {
-    font-family: 'Fraunces', Georgia, serif;
-    font-variation-settings: "opsz" 144;
-    font-weight: 400;
-    font-size: clamp(44px, 6vw, 76px);
-    line-height: 1;
-    letter-spacing: -0.02em;
-    color: var(--ink);
-  }
-  .num-label {
-    margin-top: 14px;
-    font-size: 13px;
-    color: var(--muted);
-    line-height: 1.4;
-    max-width: 22ch;
-  }
-
-  .roles { display: grid; grid-template-columns: 1fr; gap: 0; }
-  .role {
-    display: grid;
-    grid-template-columns: 180px 1fr;
-    gap: 48px;
-    padding: 40px 0;
-    border-top: 1px solid var(--rule);
-    transition: background 0.4s ease;
-  }
-  .role:hover { background: rgba(90, 42, 78, 0.03); }
-  .role:last-child { border-bottom: 1px solid var(--rule); }
-  .role-when {
-    font-family: 'Fraunces', Georgia, serif;
-    font-style: italic;
-    font-size: 16px;
-    color: var(--plum);
-    line-height: 1.3;
-  }
-  .role-where {
-    font-family: 'Fraunces', Georgia, serif;
-    font-size: 28px;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    margin-bottom: 8px;
-  }
-  .role-role {
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--muted);
-    margin-bottom: 18px;
-  }
-  .role-body { max-width: 640px; color: var(--ink-2); }
-  .role-body + .role-body { margin-top: 12px; }
-
-  .two {
-    display: grid;
-    grid-template-columns: 1fr 1.4fr;
-    gap: 64px;
-    align-items: start;
-  }
-  .two aside {
-    font-family: 'Fraunces', Georgia, serif;
-    font-style: italic;
-    font-size: 20px;
-    line-height: 1.4;
-    color: var(--plum);
-    border-left: 2px solid var(--plum);
-    padding-left: 20px;
-  }
-
-  .plan { list-style: none; padding: 0; margin: 0; max-width: 780px; }
-  .plan li {
-    display: grid;
-    grid-template-columns: 60px 1fr;
-    gap: 24px;
-    padding: 24px 0;
-    border-top: 1px solid var(--rule);
-    color: var(--ink-2);
-  }
-  .plan li:last-child { border-bottom: 1px solid var(--rule); }
-  .plan .step {
-    font-family: 'Fraunces', Georgia, serif;
-    font-style: italic;
-    color: var(--plum);
+  .hero-sub {
     font-size: 18px;
-  }
-
-  .also {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 32px;
-  }
-  .also-item {
-    font-size: 14px;
-    color: var(--ink-2);
-    line-height: 1.5;
-  }
-  .also-item strong {
-    display: block;
-    font-family: 'Fraunces', Georgia, serif;
-    font-weight: 400;
-    font-size: 17px;
-    color: var(--ink);
-    margin-bottom: 6px;
-  }
-
-  footer { padding: 96px 0 48px; border-top: 1px solid var(--rule); }
-  .cta {
-    font-family: 'Fraunces', Georgia, serif;
-    font-size: clamp(28px, 3.6vw, 44px);
-    line-height: 1.15;
-    letter-spacing: -0.02em;
-    max-width: 840px;
-    margin-bottom: 40px;
-  }
-  .cta em { font-style: italic; color: var(--plum); }
-  .contact-row {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-    font-size: 15px;
-  }
-  .contact-row a {
-    color: var(--ink);
-    text-decoration: none;
-    border-bottom: 1px solid var(--plum);
-    padding-bottom: 2px;
-    transition: color 0.2s;
-  }
-  .contact-row a:hover { color: var(--plum); }
-  .colophon {
-    margin-top: 72px;
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
     color: var(--muted);
+    max-width: 520px;
+    margin: 0 auto 36px;
+    opacity: 0;
+    animation: rise 1s ease 0.8s forwards;
+  }
+  .scroll-hint {
+    opacity: 0;
+    animation: rise 1s ease 1.4s forwards, bob 2.2s ease-in-out 2.4s infinite;
+    color: var(--plum-primary);
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  @keyframes rise { to { opacity: 1; transform: translateY(0); } from { opacity: 0; transform: translateY(14px); } }
+  @keyframes bob { 0%,100% { transform: translateY(0);} 50% { transform: translateY(6px);} }
+
+  /* ---------- BOUQUET ---------- */
+  .bouquet {
+    position: relative;
+    width: min(520px, 90vw);
+    height: 280px;
+    margin: 0 auto 20px;
+  }
+  .flower {
+    position: absolute;
+    transform-origin: bottom center;
+    animation: bloom 1.4s cubic-bezier(.2,.9,.3,1.2) forwards;
+    opacity: 0;
+  }
+  .flower svg { display: block; }
+  @keyframes bloom {
+    0% { opacity: 0; transform: translateY(40px) scale(0.1) rotate(var(--r, 0deg)); }
+    60% { opacity: 1; }
+    100% { opacity: 1; transform: translateY(0) scale(1) rotate(var(--r, 0deg)); }
+  }
+  @keyframes sway {
+    0%, 100% { transform: rotate(var(--r, 0deg)); }
+    50% { transform: rotate(calc(var(--r, 0deg) + 3deg)); }
+  }
+  .flower.sway {
+    animation: bloom 1.4s cubic-bezier(.2,.9,.3,1.2) forwards, sway 5s ease-in-out 1.4s infinite;
+  }
+
+  .f1 { left: 38%; bottom: 0; animation-delay: 0.2s; --r: -2deg; }
+  .f2 { left: 20%; bottom: 10px; animation-delay: 0.45s; --r: -8deg; }
+  .f3 { left: 58%; bottom: 10px; animation-delay: 0.35s; --r: 6deg; }
+  .f4 { left: 8%; bottom: 30px; animation-delay: 0.7s; --r: -14deg; }
+  .f5 { left: 72%; bottom: 30px; animation-delay: 0.6s; --r: 12deg; }
+  .leaf-1 { left: 30%; bottom: 0; animation-delay: 0.9s; --r: -18deg; }
+  .leaf-2 { left: 55%; bottom: 0; animation-delay: 1.0s; --r: 16deg; }
+
+  /* confetti petals */
+  .petal {
+    position: absolute;
+    width: 10px; height: 14px;
+    background: var(--plum-soft);
+    border-radius: 60% 60% 40% 40% / 80% 80% 20% 20%;
+    opacity: 0;
+    top: -20px;
+    animation: fall 7s linear infinite;
+  }
+  @keyframes fall {
+    0% { opacity: 0; transform: translateY(0) rotate(0); }
+    10% { opacity: 0.8; }
+    100% { opacity: 0; transform: translateY(110vh) rotate(720deg); }
+  }
+
+  /* ---------- SECTIONS ---------- */
+  section.chapter {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 100px 24px;
+    position: relative;
+  }
+  .chapter h2 {
+    font-size: clamp(32px, 4.5vw, 48px);
+    color: var(--plum-deep);
+    margin-bottom: 12px;
+    line-height: 1.1;
+  }
+  .chapter .kicker {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--plum-primary);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .kicker .sprig { width: 20px; height: 20px; }
+  .chapter p { margin-bottom: 18px; color: #3a2a54; font-size: 18px; }
+  .chapter p strong { color: var(--plum-deep); font-weight: 600; }
+
+  /* reveal on scroll */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .9s ease, transform .9s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* timeline */
+  .timeline {
+    display: grid;
+    gap: 24px;
+    margin-top: 32px;
+  }
+  .role {
+    background: white;
+    border-radius: 20px;
+    padding: 28px 30px;
+    border: 1px solid #ead8ff;
+    box-shadow: 0 1px 0 rgba(90,44,160,0.04), 0 20px 40px -30px rgba(90,44,160,0.25);
+    position: relative;
+    overflow: hidden;
+    transition: transform .4s ease, box-shadow .4s ease;
+  }
+  .role:hover { transform: translateY(-3px); box-shadow: 0 1px 0 rgba(90,44,160,0.04), 0 30px 50px -30px rgba(90,44,160,0.35); }
+  .role::before {
+    content: '';
+    position: absolute; left: 0; top: 0; bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, var(--plum-primary), var(--plum-soft));
+  }
+  .role-head {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .role h3 { font-size: 22px; color: var(--plum-deep); }
+  .role .dates { font-size: 13px; color: var(--muted); font-family: 'Fraunces'; font-style: italic; }
+  .role .where { font-size: 14px; color: var(--plum-primary); font-weight: 500; margin-bottom: 12px; }
+  .role ul { list-style: none; padding: 0; margin: 10px 0 0; }
+  .role li {
+    padding: 6px 0 6px 22px;
+    position: relative;
+    font-size: 15px;
+    color: #3a2a54;
+  }
+  .role li::before {
+    content: '❀';
+    position: absolute;
+    left: 0; top: 5px;
+    color: var(--plum-soft);
+    font-size: 13px;
+  }
+
+  /* stat cards */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .stat {
+    background: linear-gradient(135deg, #fff 0%, var(--plum-blush) 100%);
+    padding: 22px;
+    border-radius: 16px;
+    border: 1px solid #ead8ff;
+    position: relative;
+  }
+  .stat .num {
+    font-family: 'Fraunces';
+    font-size: 44px;
+    font-weight: 600;
+    color: var(--plum-primary);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .stat .num .plus { font-size: 28px; vertical-align: super; }
+  .stat .label { font-size: 13px; color: var(--muted); line-height: 1.4; }
+
+  /* Plum section */
+  .plum-love {
+    background: linear-gradient(160deg, var(--plum-deep) 0%, var(--plum-primary) 100%);
+    color: white;
+    border-radius: 28px;
+    padding: 48px 40px;
+    margin: 40px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .plum-love::before {
+    content: '';
+    position: absolute;
+    right: -80px; top: -80px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .plum-love h2 { color: white; margin-bottom: 20px; }
+  .plum-love p { color: rgba(255,255,255,0.88); }
+
+  /* 90 day plan */
+  .plan {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 12px;
+    margin-top: 28px;
+  }
+  .plan-card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px 18px;
+    border: 1px solid #ead8ff;
+    transition: all .3s ease;
+  }
+  .plan-card:hover { background: var(--plum-blush); transform: translateY(-2px); }
+  .plan-num {
+    font-family: 'Fraunces';
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--plum-primary);
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .plan-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--plum-deep);
+    margin-bottom: 6px;
+  }
+  .plan-body { font-size: 13px; color: var(--muted); line-height: 1.45; }
+
+  /* tags */
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .tag {
+    font-size: 12px;
+    background: var(--plum-blush);
+    color: var(--plum-primary);
+    padding: 5px 12px;
+    border-radius: 100px;
+    font-weight: 500;
+    border: 1px solid rgba(90,44,160,0.12);
   }
 
-  .reveal {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.9s ease, transform 0.9s ease;
+  /* signoff */
+  .signoff {
+    text-align: center;
+    padding: 120px 24px 100px;
+    background: linear-gradient(180deg, transparent 0%, var(--plum-blush) 100%);
   }
-  .reveal.in { opacity: 1; transform: none; }
+  .signoff .sig {
+    font-family: 'Fraunces';
+    font-style: italic;
+    font-size: 44px;
+    color: var(--plum-primary);
+    margin: 20px 0 30px;
+  }
+  .contact-row {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: var(--muted);
+    margin-top: 12px;
+  }
+  .contact-row a { color: var(--plum-primary); text-decoration: none; font-weight: 500; }
+  .contact-row a:hover { text-decoration: underline; }
 
-  @media (max-width: 860px) {
-    .wrap { padding: 0 20px; }
-    .hero {
-      grid-template-columns: 1fr;
-      gap: 40px;
-      padding: 48px 0 56px;
-    }
-    .hero-image { aspect-ratio: 4 / 5; max-width: 420px; }
-    section { padding: 56px 0; }
-    .numbers { grid-template-columns: 1fr; }
-    .num-cell { border-right: none; border-bottom: 1px solid var(--rule); }
-    .num-cell:last-child { border-bottom: none; }
-    .role { grid-template-columns: 1fr; gap: 12px; }
-    .two { grid-template-columns: 1fr; gap: 32px; }
-    .also { grid-template-columns: 1fr 1fr; }
-    .plan li { grid-template-columns: 40px 1fr; gap: 16px; }
+  /* divider flower */
+  .divider {
+    text-align: center;
+    padding: 40px 0 0;
+    color: var(--plum-soft);
+    font-size: 22px;
+    letter-spacing: 1em;
+  }
+
+  @media (max-width: 640px) {
+    .plan { grid-template-columns: repeat(2, 1fr); }
+    .stats { grid-template-columns: 1fr; }
+    .bouquet { height: 220px; }
+    .plum-love { padding: 32px 24px; }
   }
 </style>
 </head>
 <body>
 
-<div class="wrap">
+<!-- falling petals background -->
+<div id="petals"></div>
 
-  <div class="meta">
-    <div><span class="dot"></span>Fraser Richardson · London</div>
-    <div id="clock">…</div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="bouquet" aria-hidden="true">
+      <!-- back leaves -->
+      <div class="flower leaf-1 sway">
+        <svg width="60" height="100" viewBox="0 0 60 100">
+          <path d="M30 100 Q10 60 30 0 Q50 60 30 100 Z" fill="#7ba05b" opacity="0.75"/>
+          <path d="M30 100 L30 10" stroke="#5a8044" stroke-width="1.5" fill="none"/>
+        </svg>
+      </div>
+      <div class="flower leaf-2 sway">
+        <svg width="60" height="110" viewBox="0 0 60 110">
+          <path d="M30 110 Q8 65 30 5 Q52 65 30 110 Z" fill="#8fb06b" opacity="0.8"/>
+          <path d="M30 110 L30 15" stroke="#5a8044" stroke-width="1.5" fill="none"/>
+        </svg>
+      </div>
+
+      <!-- outer flowers -->
+      <div class="flower f4 sway">
+        <svg width="70" height="160" viewBox="0 0 70 160">
+          <line x1="35" y1="160" x2="35" y2="60" stroke="#5a8044" stroke-width="2.5"/>
+          <path d="M35 80 Q20 75 22 65 Q28 58 35 68" fill="#8fb06b"/>
+          <g transform="translate(35 40)">
+            <circle cx="0" cy="-18" r="12" fill="#ffb8d9"/>
+            <circle cx="17" cy="-6" r="12" fill="#ffb8d9"/>
+            <circle cx="10" cy="14" r="12" fill="#ffb8d9"/>
+            <circle cx="-10" cy="14" r="12" fill="#ffb8d9"/>
+            <circle cx="-17" cy="-6" r="12" fill="#ffb8d9"/>
+            <circle cx="0" cy="0" r="7" fill="#d4a574"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="flower f5 sway">
+        <svg width="70" height="160" viewBox="0 0 70 160">
+          <line x1="35" y1="160" x2="35" y2="60" stroke="#5a8044" stroke-width="2.5"/>
+          <path d="M35 90 Q52 85 50 72 Q42 66 35 78" fill="#8fb06b"/>
+          <g transform="translate(35 40)">
+            <ellipse cx="0" cy="-20" rx="8" ry="16" fill="#b89cf0"/>
+            <ellipse cx="0" cy="-20" rx="8" ry="16" fill="#b89cf0" transform="rotate(72)"/>
+            <ellipse cx="0" cy="-20" rx="8" ry="16" fill="#b89cf0" transform="rotate(144)"/>
+            <ellipse cx="0" cy="-20" rx="8" ry="16" fill="#b89cf0" transform="rotate(216)"/>
+            <ellipse cx="0" cy="-20" rx="8" ry="16" fill="#b89cf0" transform="rotate(288)"/>
+            <circle cx="0" cy="0" r="6" fill="#5a2ca0"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- mid flowers -->
+      <div class="flower f2 sway">
+        <svg width="70" height="180" viewBox="0 0 70 180">
+          <line x1="35" y1="180" x2="35" y2="70" stroke="#5a8044" stroke-width="2.5"/>
+          <path d="M35 110 Q18 105 20 92 Q28 86 35 96" fill="#7ba05b"/>
+          <g transform="translate(35 50)">
+            <circle cx="0" cy="-22" r="14" fill="#e8c5ff"/>
+            <circle cx="21" cy="-7" r="14" fill="#e8c5ff"/>
+            <circle cx="13" cy="18" r="14" fill="#e8c5ff"/>
+            <circle cx="-13" cy="18" r="14" fill="#e8c5ff"/>
+            <circle cx="-21" cy="-7" r="14" fill="#e8c5ff"/>
+            <circle cx="0" cy="0" r="9" fill="#d4a574"/>
+            <circle cx="0" cy="0" r="4" fill="#8b6a3d"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="flower f3 sway">
+        <svg width="70" height="180" viewBox="0 0 70 180">
+          <line x1="35" y1="180" x2="35" y2="70" stroke="#5a8044" stroke-width="2.5"/>
+          <path d="M35 120 Q54 115 52 100 Q44 93 35 106" fill="#7ba05b"/>
+          <g transform="translate(35 50)">
+            <ellipse cx="0" cy="-22" rx="9" ry="18" fill="#c89cf0"/>
+            <ellipse cx="0" cy="-22" rx="9" ry="18" fill="#c89cf0" transform="rotate(60)"/>
+            <ellipse cx="0" cy="-22" rx="9" ry="18" fill="#c89cf0" transform="rotate(120)"/>
+            <ellipse cx="0" cy="-22" rx="9" ry="18" fill="#c89cf0" transform="rotate(180)"/>
+            <ellipse cx="0" cy="-22" rx="9" ry="18" fill="#c89cf0" transform="rotate(240)"/>
+            <ellipse cx="0" cy="-22" rx="9" ry="18" fill="#c89cf0" transform="rotate(300)"/>
+            <circle cx="0" cy="0" r="8" fill="#5a2ca0"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- hero flower -->
+      <div class="flower f1 sway">
+        <svg width="90" height="220" viewBox="0 0 90 220">
+          <line x1="45" y1="220" x2="45" y2="80" stroke="#5a8044" stroke-width="3"/>
+          <path d="M45 140 Q22 135 24 118 Q34 110 45 124" fill="#7ba05b"/>
+          <path d="M45 170 Q68 165 66 148 Q56 140 45 154" fill="#7ba05b"/>
+          <g transform="translate(45 55)">
+            <!-- big layered bloom -->
+            <g>
+              <ellipse cx="0" cy="-28" rx="11" ry="22" fill="#5a2ca0"/>
+              <ellipse cx="0" cy="-28" rx="11" ry="22" fill="#5a2ca0" transform="rotate(45)"/>
+              <ellipse cx="0" cy="-28" rx="11" ry="22" fill="#5a2ca0" transform="rotate(90)"/>
+              <ellipse cx="0" cy="-28" rx="11" ry="22" fill="#5a2ca0" transform="rotate(135)"/>
+              <ellipse cx="0" cy="-28" rx="11" ry="22" fill="#5a2ca0" transform="rotate(180)"/>
+              <ellipse cx="0" cy="-28" rx="11" ry="22" fill="#5a2ca0" transform="rotate(225)"/>
+              <ellipse cx="0" cy="-28" rx="11" ry="22" fill="#5a2ca0" transform="rotate(270)"/>
+              <ellipse cx="0" cy="-28" rx="11" ry="22" fill="#5a2ca0" transform="rotate(315)"/>
+            </g>
+            <g>
+              <ellipse cx="0" cy="-18" rx="7" ry="14" fill="#b89cf0" transform="rotate(22)"/>
+              <ellipse cx="0" cy="-18" rx="7" ry="14" fill="#b89cf0" transform="rotate(67)"/>
+              <ellipse cx="0" cy="-18" rx="7" ry="14" fill="#b89cf0" transform="rotate(112)"/>
+              <ellipse cx="0" cy="-18" rx="7" ry="14" fill="#b89cf0" transform="rotate(157)"/>
+              <ellipse cx="0" cy="-18" rx="7" ry="14" fill="#b89cf0" transform="rotate(202)"/>
+              <ellipse cx="0" cy="-18" rx="7" ry="14" fill="#b89cf0" transform="rotate(247)"/>
+              <ellipse cx="0" cy="-18" rx="7" ry="14" fill="#b89cf0" transform="rotate(292)"/>
+              <ellipse cx="0" cy="-18" rx="7" ry="14" fill="#b89cf0" transform="rotate(337)"/>
+            </g>
+            <circle cx="0" cy="0" r="10" fill="#d4a574"/>
+            <circle cx="0" cy="0" r="5" fill="#8b6a3d"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <span class="eyebrow">For Plum · Brand Lead · 23 April 2026</span>
+    <h1>A little <em>bouquet</em><br/>for the Plum team.</h1>
+    <p class="hero-sub">Six years of brand work, a Riviera detour, a multilingual editorial programme out of Monaco, a 300% uplift, and a very clear reason I want to be closest to what you're building next.</p>
+    <div class="scroll-hint">↓ scroll to read</div>
   </div>
+</section>
 
-  <header class="hero">
-    <div class="hero-text">
-      <div class="kicker reveal">Applying for Brand Lead at Plum</div>
-      <h1 class="reveal">Brand, built<br/>where the <em>money</em><br/>and the <em>words</em> meet.</h1>
-      <p class="hero-sub reveal">Eight years building brand and editorial work for audiences who read the numbers carefully. In-house, independent and agency. Financial services, international property and luxury clients in London, Monaco and the Côte d'Azur.</p>
+<!-- OPENING -->
+<section class="chapter reveal">
+  <div class="kicker">
+    <svg class="sprig" viewBox="0 0 24 24" fill="none"><path d="M12 22V6" stroke="#5a2ca0" stroke-width="1.5"/><path d="M12 14C10 12 7 11 5 12C6 14 9 16 12 14Z" fill="#b89cf0"/><path d="M12 10C14 8 17 7 19 8C18 10 15 12 12 10Z" fill="#b89cf0"/><circle cx="12" cy="4" r="3" fill="#5a2ca0"/></svg>
+    Opening
+  </div>
+  <h2>Brand has been the spine, not a side-effect.</h2>
+  <p>Hello. I'm Fraser, and I'm applying for the <strong>Brand Lead</strong> role at Plum. For the last six years, across in-house, consulting and agency settings, brand has been the core of what I do, not a byproduct of demand.</p>
+  <p>What follows is the story in four chapters, a note on why I care about Plum specifically, and a first sketch of how I'd spend the first ninety days.</p>
+</section>
+
+<div class="divider">· ❀ ·</div>
+
+<!-- CHAPTER 1: FI GROUP -->
+<section class="chapter reveal">
+  <div class="kicker">
+    <svg class="sprig" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" fill="#d4a574"/><circle cx="12" cy="5" r="3" fill="#5a2ca0"/><circle cx="19" cy="12" r="3" fill="#5a2ca0"/><circle cx="12" cy="19" r="3" fill="#5a2ca0"/><circle cx="5" cy="12" r="3" fill="#5a2ca0"/></svg>
+    Chapter 1 · Now
+  </div>
+  <h2>FI Group (EPSA)</h2>
+  <p>Since October 2024 I have been shaping UK brand communications: <strong>verbal identity, tone of voice, visual direction of the UK site, and a thought-leadership narrative</strong> aimed at CFOs, finance directors and R&D leaders.</p>
+  <p>It is a technical category (R&D tax credits, innovation funding) that tends to sound the same across every player. The work has been to give FI Group a voice that actually lands with finance-literate buyers, and to hold that voice consistent across every surface.</p>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="num">300<span class="plus">%</span></div>
+      <div class="label">YoY uplift in marketing-attributed revenue, 2025</div>
     </div>
-    <div class="hero-image reveal">
-      <img src="fraser.jpg" alt="Fraser Richardson" />
+    <div class="stat">
+      <div class="num">280<span class="plus">%+</span></div>
+      <div class="label">Increase in organic traffic over the same period</div>
     </div>
-  </header>
+  </div>
+  <p style="margin-top:24px; font-style: italic; color: var(--muted);">The numbers matter, but the more relevant point for this role: a differentiated financial-services narrative exists where there wasn't one before.</p>
+</section>
 
-  <section>
-    <div class="section-label reveal"><span class="num">01</span> Shape</div>
-    <h2 class="reveal">What I've actually done, stated plainly.</h2>
-    <p class="reveal">Brand is the spine of the work, not a side-effect of demand. At FI Group (part of EPSA) I have been shaping UK brand communications since October 2024: verbal identity, tone of voice, the visual direction of the UK site and the thought-leadership narrative aimed at CFOs, finance directors and R&amp;D leaders. Independently I have built two brands from scratch on the Côte d'Azur: Annazur, a home management service, and Classic Riviera, a yacht brokerage. At Croud (VERB Brands luxury practice) I shaped launch work for Creed, Kerzner and Maybourne. And before all of it, three years at Savills Monaco building the brand and editorial engine into international HNW and family-office buyers.</p>
-  </section>
+<div class="divider">· ❀ ·</div>
 
-  <section>
-    <div class="section-label reveal"><span class="num">02</span> The work</div>
-    <div class="roles">
+<!-- CHAPTER 2: RIVIERA -->
+<section class="chapter reveal">
+  <div class="kicker">
+    <svg class="sprig" viewBox="0 0 24 24" fill="none"><path d="M4 20 Q12 10 20 20" stroke="#b89cf0" stroke-width="2" fill="none"/><circle cx="8" cy="14" r="2" fill="#ffb8d9"/><circle cx="16" cy="14" r="2" fill="#ffb8d9"/><circle cx="12" cy="10" r="2.5" fill="#5a2ca0"/></svg>
+    Chapter 2 · The Riviera
+  </div>
+  <h2>Two brands, from zero.</h2>
+  <p>On the independent side I have built brands from scratch: positioning, verbal identity, visual language, photography direction, website, social, and the brief that freelance creative works to.</p>
 
-      <article class="role reveal">
-        <div><div class="role-when">Oct 2024 to present</div></div>
-        <div>
-          <div class="role-where">FI Group (part of EPSA), London</div>
-          <div class="role-role">UK Marketing, single-operator function</div>
-          <p class="role-body">Own the UK marketing function end-to-end at an international innovation funding consultancy. Narrative, tone of voice, visual direction of the UK site and the thought-leadership engine aimed at CFOs, finance directors and R&amp;D leaders, all mine.</p>
-          <p class="role-body">The exercise: build a differentiated financial-services narrative inside a crowded category from a standing start. Translate technical innovation-funding material into a finance-buyer story that earns attention.</p>
-        </div>
-      </article>
-
-      <article class="role reveal">
-        <div><div class="role-when">Sep 2019 to Nov 2025</div></div>
-        <div>
-          <div class="role-where">Voltsai, independent consulting</div>
-          <div class="role-role">Brand builds on the Côte d'Azur</div>
-          <p class="role-body">Built two brands from scratch. Annazur, a home management service on the Côte d'Azur: positioning, verbal identity, visual language, photography direction, website, social and the brief under which freelance creative could operate. Classic Riviera, a yacht brokerage on the same coast, same full-set scope.</p>
-          <p class="role-body">Alongside these, smaller SEO, paid and web development mandates for UK and Monaco clients across property, luxury and small business.</p>
-        </div>
-      </article>
-
-      <article class="role reveal">
-        <div><div class="role-when">Jan 2024 to Jun 2024</div></div>
-        <div>
-          <div class="role-where">Croud, VERB Brands practice</div>
-          <div class="role-role">Paid Media Account Manager, luxury B2C</div>
-          <p class="role-body">Managed cross-channel paid activity averaging £90,000 a month for clients including Creed Fragrances, Kerzner Group and Maybourne Group. Launched Queen of Silk for Creed across the UK and EU and introduced Aventus into new European markets, delivering CPA efficiencies of 50% or more in several markets.</p>
-          <p class="role-body">Worked directly with creative teams to keep brand look and tone consistent across formats, and built a European HNW tracking calendar for Maybourne's seasonal paid social.</p>
-        </div>
-      </article>
-
-      <article class="role reveal">
-        <div><div class="role-when">Jun 2020 to Jun 2023</div></div>
-        <div>
-          <div class="role-where">Savills, Monaco</div>
-          <div class="role-role">Digital Marketing Director &amp; Property Broker</div>
-          <p class="role-body">Built the Monaco office's brand and editorial engine from scratch: a multilingual editorial programme (English, French, Italian), bespoke client presentation material for high-value meetings and a visual system that had to feel credible to finance-literate international HNW and family-office buyers.</p>
-          <p class="role-body">Owned tone of voice and brand guidelines across listing syndication, email, landing pages and out-of-home print. Paid media generated leads that supported over €65m of property transactions; 136% uplift in website leads and 600% improvement in search visibility for savills.mc over three years.</p>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <section>
-    <div class="section-label reveal"><span class="num">03</span> Numbers</div>
-    <h2 class="reveal">The last twelve months, for scale.</h2>
-    <div class="numbers reveal">
-      <div class="num-cell">
-        <div class="num-value" data-count="401060" data-prefix="€" data-suffix="">€0</div>
-        <div class="num-label">Attributed revenue in 2025 at FI Group. 267.5% of target, 353% uplift on 2024.</div>
+  <div class="timeline">
+    <div class="role">
+      <div class="role-head">
+        <h3>Annazur</h3>
+        <div class="dates">independent</div>
       </div>
-      <div class="num-cell">
-        <div class="num-value" data-count="248" data-prefix="" data-suffix="%">0%</div>
-        <div class="num-label">Year on year UK website traffic growth. Signal-led content, technical hygiene, CRO.</div>
+      <div class="where">Home management service · Côte d'Azur</div>
+      <p style="font-size:15px; margin-bottom:0;">A high-trust, discreet service category. Built the full brand world for a clientele that judges credibility in the first ten seconds.</p>
+    </div>
+    <div class="role">
+      <div class="role-head">
+        <h3>Classic Riviera</h3>
+        <div class="dates">independent</div>
       </div>
-      <div class="num-cell">
-        <div class="num-value" data-count="65" data-prefix="€" data-suffix="m">€0m</div>
-        <div class="num-label">Of property transactions supported at Savills Monaco, HNW and family-office.</div>
-      </div>
+      <div class="where">Yacht brokerage · Côte d'Azur</div>
+      <p style="font-size:15px; margin-bottom:0;">A category with a very specific aesthetic grammar. Positioning, identity, and the brief that kept freelance output on-brand without needing me in every review.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section>
-    <div class="section-label reveal"><span class="num">04</span> Why Plum</div>
-    <div class="two">
-      <aside class="reveal">"Grow money for life" is a clearer brand proposition than most fintechs manage. I'd rather work on that than on a positioning that hasn't been figured out yet.</aside>
-      <div>
-        <p class="reveal">Savings and investing into a consumer finance audience is a category where verbal identity genuinely does drive trust. Plum operates at European scale across ten markets, which is the sort of multilingual positioning problem I find interesting after four years of multilingual work out of Monaco.</p>
-        <p class="reveal">A refresh that has to reflect a growing product suite and an international presence, with the Brand Lead acting as internal consultant to Product Design and the Creative Studio, is the shape of work I want to be closest to. Making a proposition feel distinctive to a specific audience, holding a consistent look and tone across every surface that carries the logo, and briefing creative teams to work to that standard without bottlenecking on me is the thread across all my in-house, consulting and agency work.</p>
-      </div>
+<div class="divider">· ❀ ·</div>
+
+<!-- CHAPTER 3: CROUD / VERB -->
+<section class="chapter reveal">
+  <div class="kicker">
+    <svg class="sprig" viewBox="0 0 24 24" fill="none"><path d="M12 22V10" stroke="#5a2ca0" stroke-width="1.5"/><ellipse cx="8" cy="8" rx="5" ry="3" fill="#c89cf0" transform="rotate(-30 8 8)"/><ellipse cx="16" cy="8" rx="5" ry="3" fill="#c89cf0" transform="rotate(30 16 8)"/><ellipse cx="12" cy="4" rx="5" ry="3" fill="#5a2ca0"/><circle cx="12" cy="8" r="2" fill="#d4a574"/></svg>
+    Chapter 3 · Agency
+  </div>
+  <h2>Croud · VERB Brands practice</h2>
+  <p>Agency side, working with houses where brand equity <em>is</em> the product:</p>
+
+  <div class="timeline">
+    <div class="role">
+      <h3>Creed</h3>
+      <div class="where">New product launch campaigns</div>
+      <ul>
+        <li>Queen of Silk launch, UK and EU</li>
+        <li>Aventus push into new European markets</li>
+      </ul>
     </div>
-  </section>
-
-  <section>
-    <div class="section-label reveal"><span class="num">05</span> On AI</div>
-    <h2 class="reveal">Part of the workflow, not a separate exercise.</h2>
-    <p class="reveal">Claude, ChatGPT and lightweight automations sit inside drafting, research, landing-page iteration, brand-voice calibration and campaign analysis. I use them to hold a consistent tone of voice across a lot of output, which is close to the operational problem a Brand Lead overseeing creative at scale is trying to solve. At FI Group this includes a lead-qualifying chatbot and automated content workflows inside the UK AI roadmap.</p>
-    <p class="reveal" style="font-family: 'Fraunces', serif; font-style: italic; color: var(--muted); font-size: 15px; margin-top: 28px;">(This page was built with one of those tools, in about an hour.)</p>
-  </section>
-
-  <section>
-    <div class="section-label reveal"><span class="num">06</span> First 90 days</div>
-    <h2 class="reveal">What I'd expect to do.</h2>
-    <ol class="plan">
-      <li class="reveal"><div class="step">i.</div><div>Audit the current brand system and how consistently it shows up across app UI, social, paid and out-of-home.</div></li>
-      <li class="reveal"><div class="step">ii.</div><div>A read with Product Design and the Creative Studio on where the system is doing its job and where it is leaking.</div></li>
-      <li class="reveal"><div class="step">iii.</div><div>A first view on the refresh that names the three or four places I think matter most.</div></li>
-      <li class="reveal"><div class="step">iv.</div><div>A tighter brief and review rhythm with the external agencies so output quality rises without bottlenecking on me.</div></li>
-    </ol>
-  </section>
-
-  <section>
-    <div class="section-label reveal"><span class="num">07</span> Also</div>
-    <div class="also">
-      <div class="also-item reveal"><strong>Education</strong>First Class BA (Hons) Business &amp; Marketing Management, Oxford Brookes. Acting for Screen, Natalie Ford Studios, Los Angeles.</div>
-      <div class="also-item reveal"><strong>Languages</strong>English (native). French (intermediate, from four years living and working in France and Monaco).</div>
-      <div class="also-item reveal"><strong>Writing</strong>Signed with an agent for writing and acting. Two screenplays currently with Universal Studios.</div>
-      <div class="also-item reveal"><strong>Stack</strong>Microsoft Dynamics, GA4, Webflow, Ahrefs, Meta / Google / LinkedIn Ads. Claude and ChatGPT daily for drafting, review and brand-voice work.</div>
+    <div class="role">
+      <h3>Kerzner Group</h3>
+      <div class="where">New hotel launch work</div>
     </div>
-  </section>
-
-  <footer>
-    <div class="cta reveal">Happy to walk through the brand-building work at <em>FI Group</em>, <em>Annazur</em>, <em>Classic Riviera</em>, <em>Savills</em> and <em>Creed</em> in more detail, and to hear where you think the Plum brand system is strongest today.</div>
-    <div class="contact-row reveal">
-      <a href="mailto:fraser.coms@gmail.com">fraser.coms@gmail.com</a>
-      <a href="tel:+447876029801">+44 7876 029 801</a>
-      <a href="https://linkedin.com/in/fraserdrichardson" target="_blank" rel="noopener">linkedin.com/in/fraserdrichardson</a>
+    <div class="role">
+      <h3>Maybourne Group</h3>
+      <div class="where">European HNW tracking calendar for seasonal paid social targeting</div>
     </div>
-    <div class="colophon">
-      <div>Fraser Richardson · Profile for Plum · Brand Lead</div>
-      <div>Set in Fraunces &amp; Inter</div>
-    </div>
-  </footer>
+  </div>
+</section>
 
-</div>
+<div class="divider">· ❀ ·</div>
+
+<!-- CHAPTER 4: SAVILLS -->
+<section class="chapter reveal">
+  <div class="kicker">
+    <svg class="sprig" viewBox="0 0 24 24" fill="none"><path d="M6 4 L12 2 L18 4 L18 18 L12 22 L6 18 Z" fill="#b89cf0" opacity="0.5"/><path d="M12 2 V22" stroke="#5a2ca0" stroke-width="1.5"/></svg>
+    Chapter 4 · Three years in Monaco
+  </div>
+  <h2>Savills Monaco</h2>
+  <p>Three years building the <strong>brand and editorial engine</strong> into an international HNW and family-office audience. A significant multilingual programme in English, French and Italian, bespoke client presentation material for high-value meetings, and a visual system that had to feel credible to finance-literate international buyers.</p>
+  <div class="tags">
+    <span class="tag">EN · FR · IT</span>
+    <span class="tag">HNW + family office</span>
+    <span class="tag">Editorial system</span>
+    <span class="tag">Visual identity</span>
+    <span class="tag">Client presentation design</span>
+  </div>
+</section>
+
+<div class="divider">· ❀ ·</div>
+
+<!-- THE THREAD -->
+<section class="chapter reveal">
+  <div class="kicker">
+    <svg class="sprig" viewBox="0 0 24 24" fill="none"><path d="M3 12 Q12 4 21 12 Q12 20 3 12Z" fill="#e8c5ff"/><circle cx="12" cy="12" r="3" fill="#5a2ca0"/></svg>
+    The thread
+  </div>
+  <h2>The same job, in four settings.</h2>
+  <p>Make a proposition feel <strong>distinctive</strong> to a specific audience. Hold a <strong>consistent</strong> look and tone across every surface that carries the logo. Brief creative teams to work to that standard without bottlenecking on me.</p>
+  <p style="color: var(--plum-primary); font-family: 'Fraunces'; font-style: italic; font-size: 22px; line-height:1.4; margin-top: 20px;">That is what your JD is asking for, and it is what I have actually been doing.</p>
+</section>
+
+<!-- WHY PLUM -->
+<section class="chapter">
+  <div class="plum-love reveal">
+    <div class="kicker" style="color: #e8c5ff;">
+      <svg class="sprig" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.5-7-10a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-7 10-7 10-2 1-2 1-4 0Z" fill="#b89cf0"/></svg>
+      Why Plum, specifically
+    </div>
+    <h2>Savings and investing is a category where verbal identity <em>genuinely</em> drives trust.</h2>
+    <p>You are running at European scale across ten markets, which is the kind of multilingual positioning problem I find interesting after four years working out of Monaco.</p>
+    <p><em>"Grow money for life"</em> is a clearer brand proposition than most fintechs manage. And a refresh that has to reflect a growing product suite and an international presence is exactly the kind of work I want to be closest to.</p>
+  </div>
+</section>
+
+<!-- AI NOTE -->
+<section class="chapter reveal">
+  <div class="kicker">
+    <svg class="sprig" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" fill="#f3e9ff" stroke="#5a2ca0" stroke-width="1.5"/><circle cx="9" cy="10" r="1.5" fill="#5a2ca0"/><circle cx="15" cy="10" r="1.5" fill="#5a2ca0"/><path d="M9 15 Q12 17 15 15" stroke="#5a2ca0" stroke-width="1.5" fill="none"/></svg>
+    On AI
+  </div>
+  <h2>A working tool, not a novelty.</h2>
+  <p>Claude and ChatGPT are part of my daily workflow for <strong>drafting, research, landing-page iteration, brand-voice calibration, and campaign analysis.</strong></p>
+  <p>I use them to hold consistent tone across a lot of output, which is close to the operational problem a Brand Lead overseeing creative at scale is trying to solve.</p>
+</section>
+
+<div class="divider">· ❀ ·</div>
+
+<!-- 90 DAYS -->
+<section class="chapter reveal">
+  <div class="kicker">
+    <svg class="sprig" viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="15" rx="2" fill="#f3e9ff" stroke="#5a2ca0" stroke-width="1.5"/><line x1="4" y1="10" x2="20" y2="10" stroke="#5a2ca0" stroke-width="1.5"/><line x1="8" y1="3" x2="8" y2="7" stroke="#5a2ca0" stroke-width="1.5"/><line x1="16" y1="3" x2="16" y2="7" stroke="#5a2ca0" stroke-width="1.5"/></svg>
+    First 90 days
+  </div>
+  <h2>A sketch, not a pitch.</h2>
+  <div class="plan">
+    <div class="plan-card">
+      <div class="plan-num">01</div>
+      <div class="plan-title">Audit</div>
+      <div class="plan-body">How the brand is showing up across app UI, social, paid and OOH today.</div>
+    </div>
+    <div class="plan-card">
+      <div class="plan-num">02</div>
+      <div class="plan-title">Read</div>
+      <div class="plan-body">With Product Design and the Creative Studio: where it's doing its job, where it's leaking.</div>
+    </div>
+    <div class="plan-card">
+      <div class="plan-num">03</div>
+      <div class="plan-title">Refresh POV</div>
+      <div class="plan-body">A first view that names the three or four places I think matter most.</div>
+    </div>
+    <div class="plan-card">
+      <div class="plan-num">04</div>
+      <div class="plan-title">Agency rhythm</div>
+      <div class="plan-body">Tighter brief and review loop with external agencies so output quality rises across the board.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SIGNOFF -->
+<section class="signoff reveal">
+  <div class="kicker" style="justify-content:center;">
+    <svg class="sprig" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.5-7-10a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-7 10-7 10-2 1-2 1-4 0Z" fill="#5a2ca0"/></svg>
+    Thank you
+  </div>
+  <h2 style="color: var(--plum-deep); max-width: 600px; margin: 16px auto 0;">I'd welcome the chance to walk through the brand-building work in more detail, and hear where <em>you</em> think the Plum brand is strongest today, and where it most needs tightening.</h2>
+  <div class="sig">Fraser Richardson</div>
+  <div class="contact-row">
+    <span>London, UK</span>
+    <span>·</span>
+    <a href="mailto:fraser.coms@gmail.com">fraser.coms@gmail.com</a>
+    <span>·</span>
+    <a href="tel:+447876029801">+44 7876 029 801</a>
+  </div>
+  <div style="margin-top: 60px; font-size: 24px; letter-spacing: 0.8em; color: var(--plum-soft);">❀ ❀ ❀</div>
+</section>
 
 <script>
-  function tick() {
-    const d = new Date();
-    const t = d.toLocaleTimeString('en-GB', { timeZone: 'Europe/London', hour: '2-digit', minute: '2-digit' });
-    document.getElementById('clock').textContent = 'London · ' + t;
-  }
-  tick(); setInterval(tick, 30000);
-
+  // scroll reveal
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, { threshold: 0.15 });
+  }, { threshold: 0.12 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-  function animateCount(el) {
-    const target = parseFloat(el.dataset.count);
-    const prefix = el.dataset.prefix || '';
-    const suffix = el.dataset.suffix || '';
-    const duration = 1400;
-    const start = performance.now();
-    function frame(now) {
-      const t = Math.min(1, (now - start) / duration);
-      const eased = 1 - Math.pow(1 - t, 3);
-      const v = target * eased;
-      let out;
-      if (target >= 10000) out = Math.round(v).toLocaleString('en-GB');
-      else if (target % 1 !== 0) out = v.toFixed(1);
-      else out = Math.round(v).toString();
-      el.textContent = prefix + out + suffix;
-      if (t < 1) requestAnimationFrame(frame);
-    }
-    requestAnimationFrame(frame);
+  // falling petals
+  const petalColors = ['#b89cf0', '#e8c5ff', '#ffb8d9', '#c89cf0', '#d4a574'];
+  const container = document.getElementById('petals');
+  container.style.position = 'fixed';
+  container.style.inset = '0';
+  container.style.pointerEvents = 'none';
+  container.style.zIndex = '1';
+  container.style.overflow = 'hidden';
+  for (let i = 0; i < 18; i++) {
+    const p = document.createElement('div');
+    p.className = 'petal';
+    p.style.left = Math.random() * 100 + 'vw';
+    p.style.background = petalColors[i % petalColors.length];
+    p.style.animationDelay = (Math.random() * 7) + 's';
+    p.style.animationDuration = (6 + Math.random() * 6) + 's';
+    p.style.transform = `scale(${0.6 + Math.random() * 0.8})`;
+    container.appendChild(p);
   }
-  const numIO = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { animateCount(e.target); numIO.unobserve(e.target); } });
-  }, { threshold: 0.5 });
-  document.querySelectorAll('.num-value[data-count]').forEach(el => numIO.observe(el));
 </script>
 
 </body>
