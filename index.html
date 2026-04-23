@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Fraser Richardson · Brand Lead, applying to Plum</title>
-<meta name="description" content="A short profile from Fraser Richardson for the Brand Lead role at Plum. Eight years in commercial marketing, verbal identity and multilingual positioning." />
+<meta name="description" content="A short profile from Fraser Richardson for the Brand Lead role at Plum. Eight years building brand and editorial work for audiences who read the numbers carefully." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -40,7 +40,7 @@
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='5'/><feColorMatrix values='0 0 0 0 0.1  0 0 0 0 0.09  0 0 0 0 0.08  0 0 0 0.06 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
     mix-blend-mode: multiply;
   }
-  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 32px; position: relative; z-index: 2; }
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 32px; position: relative; z-index: 2; }
 
   .meta {
     display: flex;
@@ -62,7 +62,42 @@
     vertical-align: middle;
   }
 
-  .hero { padding: 96px 0 72px; }
+  /* Hero with photo */
+  .hero {
+    padding: 96px 0 72px;
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .hero-text { min-width: 0; }
+  .hero-image {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+  }
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: saturate(0.95) contrast(1.02);
+  }
+  .hero-image::after {
+    content: "Fraser Richardson, London, 2026";
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    color: var(--paper);
+    mix-blend-mode: difference;
+    letter-spacing: 0.02em;
+  }
   .kicker {
     font-size: 12px;
     letter-spacing: 0.18em;
@@ -75,7 +110,7 @@
     font-family: 'Fraunces', Georgia, serif;
     font-weight: 400;
     font-variation-settings: "opsz" 144, "SOFT" 30;
-    font-size: clamp(56px, 10vw, 132px);
+    font-size: clamp(48px, 7.2vw, 104px);
     line-height: 0.92;
     letter-spacing: -0.03em;
     margin: 0 0 36px;
@@ -89,11 +124,11 @@
   .hero-sub {
     font-family: 'Fraunces', Georgia, serif;
     font-weight: 300;
-    font-size: clamp(22px, 2.4vw, 30px);
-    line-height: 1.35;
-    max-width: 760px;
+    font-size: clamp(19px, 1.8vw, 24px);
+    line-height: 1.4;
     color: var(--ink-2);
     letter-spacing: -0.01em;
+    max-width: 540px;
   }
 
   section { padding: 72px 0; border-top: 1px solid var(--rule); }
@@ -244,10 +279,10 @@
   footer { padding: 96px 0 48px; border-top: 1px solid var(--rule); }
   .cta {
     font-family: 'Fraunces', Georgia, serif;
-    font-size: clamp(32px, 4vw, 48px);
-    line-height: 1.1;
+    font-size: clamp(28px, 3.6vw, 44px);
+    line-height: 1.15;
     letter-spacing: -0.02em;
-    max-width: 800px;
+    max-width: 840px;
     margin-bottom: 40px;
   }
   .cta em { font-style: italic; color: var(--plum); }
@@ -284,9 +319,14 @@
   }
   .reveal.in { opacity: 1; transform: none; }
 
-  @media (max-width: 760px) {
+  @media (max-width: 860px) {
     .wrap { padding: 0 20px; }
-    .hero { padding: 56px 0 48px; }
+    .hero {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      padding: 48px 0 56px;
+    }
+    .hero-image { aspect-ratio: 4 / 5; max-width: 420px; }
     section { padding: 56px 0; }
     .numbers { grid-template-columns: 1fr; }
     .num-cell { border-right: none; border-bottom: 1px solid var(--rule); }
@@ -308,15 +348,20 @@
   </div>
 
   <header class="hero">
-    <div class="kicker reveal">Applying for Brand Lead at Plum</div>
-    <h1 class="reveal">Brand, built<br/>where the <em>money</em><br/>and the <em>words</em> meet.</h1>
-    <p class="hero-sub reveal">Eight years of commercial marketing across financial services, international property and agency work. I build verbal identity, editorial programmes and multilingual narrative for audiences who read the numbers carefully.</p>
+    <div class="hero-text">
+      <div class="kicker reveal">Applying for Brand Lead at Plum</div>
+      <h1 class="reveal">Brand, built<br/>where the <em>money</em><br/>and the <em>words</em> meet.</h1>
+      <p class="hero-sub reveal">Eight years building brand and editorial work for audiences who read the numbers carefully. In-house, independent and agency. Financial services, international property and luxury clients in London, Monaco and the Côte d'Azur.</p>
+    </div>
+    <div class="hero-image reveal">
+      <img src="fraser.jpg" alt="Fraser Richardson" />
+    </div>
   </header>
 
   <section>
     <div class="section-label reveal"><span class="num">01</span> Shape</div>
     <h2 class="reveal">What I've actually done, stated plainly.</h2>
-    <p class="reveal">The part of my track record that sits closest to Brand Lead is three years at Savills in Monaco building the brand and editorial engine into international HNW and family-office buyers, and the agency stint at Croud (VERB Brands luxury practice) running paid and creative for houses including Creed, Kerzner and Maybourne. The verbal identity work, the multilingual narrative, the editorial programme and the discipline of making a financial proposition feel differentiated to a specific buyer are the core of what I have done.</p>
+    <p class="reveal">Brand is the spine of the work, not a side-effect of demand. At FI Group (part of EPSA) I have been shaping UK brand communications since October 2024: verbal identity, tone of voice, the visual direction of the UK site and the thought-leadership narrative aimed at CFOs, finance directors and R&amp;D leaders. Independently I have built two brands from scratch on the Côte d'Azur: Annazur, a home management service, and Classic Riviera, a yacht brokerage. At Croud (VERB Brands luxury practice) I shaped launch work for Creed, Kerzner and Maybourne. And before all of it, three years at Savills Monaco building the brand and editorial engine into international HNW and family-office buyers.</p>
   </section>
 
   <section>
@@ -324,11 +369,9 @@
     <div class="roles">
 
       <article class="role reveal">
+        <div><div class="role-when">Oct 2024 to present</div></div>
         <div>
-          <div class="role-when">Oct 2024 to present</div>
-        </div>
-        <div>
-          <div class="role-where">FI Group, London</div>
+          <div class="role-where">FI Group (part of EPSA), London</div>
           <div class="role-role">UK Marketing, single-operator function</div>
           <p class="role-body">Own the UK marketing function end-to-end at an international innovation funding consultancy. Narrative, tone of voice, visual direction of the UK site and the thought-leadership engine aimed at CFOs, finance directors and R&amp;D leaders, all mine.</p>
           <p class="role-body">The exercise: build a differentiated financial-services narrative inside a crowded category from a standing start. Translate technical innovation-funding material into a finance-buyer story that earns attention.</p>
@@ -336,9 +379,17 @@
       </article>
 
       <article class="role reveal">
+        <div><div class="role-when">Sep 2019 to Nov 2025</div></div>
         <div>
-          <div class="role-when">Jan 2024 to Jun 2024</div>
+          <div class="role-where">Voltsai, independent consulting</div>
+          <div class="role-role">Brand builds on the Côte d'Azur</div>
+          <p class="role-body">Built two brands from scratch. Annazur, a home management service on the Côte d'Azur: positioning, verbal identity, visual language, photography direction, website, social and the brief under which freelance creative could operate. Classic Riviera, a yacht brokerage on the same coast, same full-set scope.</p>
+          <p class="role-body">Alongside these, smaller SEO, paid and web development mandates for UK and Monaco clients across property, luxury and small business.</p>
         </div>
+      </article>
+
+      <article class="role reveal">
+        <div><div class="role-when">Jan 2024 to Jun 2024</div></div>
         <div>
           <div class="role-where">Croud, VERB Brands practice</div>
           <div class="role-role">Paid Media Account Manager, luxury B2C</div>
@@ -348,14 +399,12 @@
       </article>
 
       <article class="role reveal">
-        <div>
-          <div class="role-when">Jun 2020 to Jun 2023</div>
-        </div>
+        <div><div class="role-when">Jun 2020 to Jun 2023</div></div>
         <div>
           <div class="role-where">Savills, Monaco</div>
           <div class="role-role">Digital Marketing Director &amp; Property Broker</div>
           <p class="role-body">Built the Monaco office's brand and editorial engine from scratch: a multilingual editorial programme (English, French, Italian), bespoke client presentation material for high-value meetings and a visual system that had to feel credible to finance-literate international HNW and family-office buyers.</p>
-          <p class="role-body">Owned tone of voice and brand guidelines across listing syndication, email, landing pages and out-of-home print. Paid media generated leads that supported over €65m of property transactions across the book; 136% uplift in website leads and 600% improvement in search visibility for savills.mc over three years.</p>
+          <p class="role-body">Owned tone of voice and brand guidelines across listing syndication, email, landing pages and out-of-home print. Paid media generated leads that supported over €65m of property transactions; 136% uplift in website leads and 600% improvement in search visibility for savills.mc over three years.</p>
         </div>
       </article>
 
@@ -386,8 +435,8 @@
     <div class="two">
       <aside class="reveal">"Grow money for life" is a clearer brand proposition than most fintechs manage. I'd rather work on that than on a positioning that hasn't been figured out yet.</aside>
       <div>
-        <p class="reveal">Savings and investing into a consumer finance audience is a category where verbal identity genuinely does drive trust. Plum operates at European scale across ten markets, the sort of multilingual positioning problem I find interesting after four years of multilingual work out of Monaco.</p>
-        <p class="reveal">Two gaps I should name. I have not led a brand refresh at the scale Plum is describing as an internal consultant to a Product Design team and a Creative Studio; the closest analogues are building the brand and content system at Savills and at FI Group from a much smaller starting point. And I have not held end-to-end relationships with external brand strategy and creative agencies at Plum's size. I'd expect to over-invest in the first month on reading the current brand system, the customer research you already hold and the agency relationships before proposing anything.</p>
+        <p class="reveal">Savings and investing into a consumer finance audience is a category where verbal identity genuinely does drive trust. Plum operates at European scale across ten markets, which is the sort of multilingual positioning problem I find interesting after four years of multilingual work out of Monaco.</p>
+        <p class="reveal">A refresh that has to reflect a growing product suite and an international presence, with the Brand Lead acting as internal consultant to Product Design and the Creative Studio, is the shape of work I want to be closest to. Making a proposition feel distinctive to a specific audience, holding a consistent look and tone across every surface that carries the logo, and briefing creative teams to work to that standard without bottlenecking on me is the thread across all my in-house, consulting and agency work.</p>
       </div>
     </div>
   </section>
@@ -395,7 +444,7 @@
   <section>
     <div class="section-label reveal"><span class="num">05</span> On AI</div>
     <h2 class="reveal">Part of the workflow, not a separate exercise.</h2>
-    <p class="reveal">Claude, ChatGPT, Midjourney and lightweight automations sit inside drafting, research, landing-page iteration, brand-voice calibration and campaign analysis. I use them to hold a consistent tone of voice across a lot of output, which is close to the operational problem a Brand Lead overseeing creative at scale is trying to solve. At FI Group this includes a lead-qualifying chatbot and automated content workflows inside the UK AI roadmap.</p>
+    <p class="reveal">Claude, ChatGPT and lightweight automations sit inside drafting, research, landing-page iteration, brand-voice calibration and campaign analysis. I use them to hold a consistent tone of voice across a lot of output, which is close to the operational problem a Brand Lead overseeing creative at scale is trying to solve. At FI Group this includes a lead-qualifying chatbot and automated content workflows inside the UK AI roadmap.</p>
     <p class="reveal" style="font-family: 'Fraunces', serif; font-style: italic; color: var(--muted); font-size: 15px; margin-top: 28px;">(This page was built with one of those tools, in about an hour.)</p>
   </section>
 
@@ -421,7 +470,7 @@
   </section>
 
   <footer>
-    <div class="cta reveal">Happy to walk through the <em>Savills</em> and <em>FI Group</em> work in more detail, and to hear where you think the Plum brand system is strongest today.</div>
+    <div class="cta reveal">Happy to walk through the brand-building work at <em>FI Group</em>, <em>Annazur</em>, <em>Classic Riviera</em>, <em>Savills</em> and <em>Creed</em> in more detail, and to hear where you think the Plum brand system is strongest today.</div>
     <div class="contact-row reveal">
       <a href="mailto:fraser.coms@gmail.com">fraser.coms@gmail.com</a>
       <a href="tel:+447876029801">+44 7876 029 801</a>
